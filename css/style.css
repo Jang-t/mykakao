@@ -1,0 +1,228 @@
+#wrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  position: relative;
+  width: 536px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #fefcea 0%, #f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: left;
+  border: 1px solid #000;
+}
+#wrap .upper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .upper .side {
+  display: inline-block;
+  width: 66px;
+  height: 700px;
+  text-align: center;
+  background-color: #ebebec;
+}
+#wrap .upper .side p {
+  background-color: #ececed;
+}
+#wrap .upper .side p i {
+  font-size: 40px;
+  color: #343740;
+}
+#wrap .upper .side p i:hover {
+  color: #909297;
+}
+#wrap .upper .side p:first-of-type i {
+  animation: twinkle 0.2s infinite alternate;
+}
+@keyframes twinkle {
+  from {
+    color: #0f0;
+  }
+  to {
+    color: #0040ff;
+  }
+}
+#wrap .upper .main {
+  width: 450px;
+  padding: 0 10px;
+}
+#wrap .upper .main .users {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .upper .main .users h1 {
+  font-size: 30px;
+}
+#wrap .upper .main .users p a i:hover {
+  background-color: lawngreen;
+  border-radius: 50%;
+}
+#wrap .upper .main .users p a i {
+  padding: 10px;
+  color: #bfbfbf;
+  font-size: 20px;
+}
+#wrap .upper .main .me:hover {
+  background-color: lightgray;
+}
+#wrap .upper .main .me:hover p a {
+  background-color: rgb(255, 140, 0);
+}
+#wrap .ad p a {
+  position: absolute;
+  left: -1px;
+  bottom: -100px;
+  float: inline-end;
+  width: 536px;
+  height: 139px;
+  text-indent: -9999px;
+  background-image: url(../images/ad.gif);
+  background-position: -3px 139px;
+  background-size: cover;
+  border: 1px solid #000;
+}
+
+.me {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.me p:first-child a {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-indent: -9999px;
+  background-image: url(../images/seoul.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.me p:nth-of-type(2) {
+  margin-right: 150px;
+  font-weight: 900;
+}
+.me p:nth-of-type(3) > a {
+  padding: 5px;
+  color: #000;
+  font-weight: 900;
+  background-color: rgb(255, 140, 0);
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+.me p:nth-of-type(3) > a:link {
+  text-decoration: none;
+}
+
+.friends > div:hover {
+  background-color: lightgray;
+}
+
+.friends > div:hover p a {
+  background-color: rgb(255, 140, 0);
+}
+
+.friends > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.friends > div p:first-child a {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-indent: -9999px;
+  background-image: url(../images/classic.gif);
+  background-position: -15px -9px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.friends > div p:nth-of-type(2) {
+  margin-right: 160px;
+  font-weight: 900;
+}
+.friends > div p:nth-of-type(2) > span:first-of-type {
+  position: absolute;
+  top: 42px;
+  left: 120px;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  text-indent: -9999px;
+  background-image: url(../images/cake.gif);
+  background-repeat: no-repeat;
+}
+.friends > div p:nth-of-type(3) > a {
+  padding: 5px;
+  color: #000;
+  font-weight: 900;
+  background-color: bisque;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+.friends > div p:nth-of-type(3) > a:link {
+  text-decoration: none;
+}
+
+.favorite + .friends div p:first-child a {
+  margin-right: 5px;
+  background-image: url(../images/pet.gif);
+  background-position: -28px -9px;
+  background-size: 125px;
+}
+.favorite + .friends div p:nth-of-type(2) {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.favorite + .friends div p:nth-of-type(2) > span:first-of-type {
+  display: none;
+}
+.favorite + .friends div p:nth-of-type(3) {
+  position: relative;
+  width: 160%;
+  text-align: right;
+}
+.favorite + .friends div p:nth-of-type(3) a {
+  display: inline-block;
+  width: 245px;
+  padding: 7px;
+  text-align: left;
+  background-color: white;
+  border: 3px solid #0f0;
+}
+.favorite + .friends div p:nth-of-type(3) span:last-child {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000;
+}
+.favorite + .friends div:last-of-type p:first-child a {
+  margin-right: 5px;
+  background-image: url(../images/clova.gif);
+  background-position: -15px -10px;
+  background-size: 100px;
+}
+.favorite + .friends div:last-of-type p:nth-of-type(3) a {
+  width: 220px;
+}
+
+h2 {
+  font-size: 15px;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

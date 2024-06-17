@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@mixin flex() {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#wrap {
+	width: 536px;
+	margin: 0 auto;
+	text-align: left;
+	border: 1px solid #000;
+	background-color: #bacee0;
+
+	header {
+		display: flex;
+		align-items: center;
+		> a:first-of-type {
+			display: inline-block;
+			width: calc(676px - 636px);
+			height: calc(676px - 636px);
+			margin: 20px 10px;
+			text-indent: -9999px;
+			background-image: url(./../seoul.gif);
+			background-position: -28px -19px;
+			background-size: 125px;
+			background-repeat: no-repeat;
+			border-radius: 45%;
+		}
+
+		p:last-of-type {
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				padding: 5px;
+				color: #666666;
+				font-size: 20px;
+				text-align: center;
+				border-radius: 50%;
+			}
+			a:first-of-type {
+				margin-left: 340px;
+			}
+
+			a:hover {
+				background-color: rgb(0, 255, 170);
+			}
+		}
+	}
+
+	section {
+		position: relative;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+
+		a:link {
+			color: #000;
+			text-decoration: none;
+		}
+
+		a:hover {
+			background-color: #a7b9c9;
+		}
+	}
+	a {
+		display: block;
+		width: 40%;
+		height: 30px;
+		margin: 10px auto;
+		background-color: #b1c3d5;
+		border-radius: 10px;
+		p {
+			height: 100%;
+			font-size: 14px;
+			text-align: center;
+			line-height: 30px;
+		}
+	}
+	.bubbleFromMe1,
+	.bubbleFromMe2 {
+		position: relative;
+		font-size: 13px;
+		margin: 10px 30px;
+		margin-left: 190px;
+		padding: 5px;
+		background-color: #ffeb33;
+		border-radius: 5px;
+		box-shadow: 0.1px 0.1px 5px 0px;
+		span {
+			position: absolute;
+		}
+		span:first-of-type {
+			right: -15px;
+			top: 10px;
+			border-width: 15px;
+			border-style: solid;
+			border-color: #ffeb33 transparent transparent #ffeb33;
+		}
+		span:last-of-type {
+			left: -40px;
+			bottom: 0;
+		}
+		div {
+			position: absolute;
+			right: -28px;
+			bottom: -8px;
+			width: 10px;
+			height: 30px;
+			text-indent: -9999px;
+			background-color: #93a2b0;
+			border-radius: 5px;
+		}
+	}
+}
+
+footer {
+	background-color: white;
+}

@@ -1,0 +1,197 @@
+#wrap {
+  width: 536px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #000;
+  background-color: #bacee0;
+}
+#wrap a:visited,
+#wrap a:active {
+  color: #000;
+}
+#wrap header {
+  display: flex;
+  align-items: center;
+}
+#wrap header > a:first-of-type {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+  text-indent: -9999px;
+  background-image: url(../images/clova.gif);
+  background-position: -12px -8px;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  border-radius: 45%;
+}
+#wrap header > div p span {
+  height: 40px;
+  color: #999999;
+  font-size: 12px;
+}
+#wrap header p:last-of-type a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: #666666;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+#wrap header p:last-of-type a:first-of-type {
+  margin-left: 340px;
+}
+#wrap header p:last-of-type a:hover {
+  background-color: rgb(0, 255, 170);
+}
+#wrap a:link {
+  color: #000;
+  text-decoration: none;
+}
+#wrap section {
+  position: relative;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#wrap section a:hover {
+  background-color: #a7b9c9;
+}
+#wrap section a {
+  display: block;
+  width: 40%;
+  height: 30px;
+  margin: 10px auto;
+  background-color: #b1c3d5;
+  border-radius: 10px;
+}
+#wrap section a p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+#wrap section .bubbleFromMe {
+  position: relative;
+  font-size: 13px;
+  margin: 10px 30px;
+  margin-left: 340px;
+  padding: 10px;
+  background-color: #ffeb33;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.1px 5px 0px;
+  transition: all 2.3s ease-out;
+}
+#wrap section .bubbleFromMe span {
+  position: absolute;
+}
+#wrap section .bubbleFromMe span:first-of-type {
+  right: -13px;
+  top: 6px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffeb33 transparent transparent #ffeb33;
+}
+#wrap section .bubbleFromMe span:last-of-type {
+  left: -37px;
+  bottom: 0;
+}
+#wrap section .bubbleFromMe div:hover {
+  background-color: #5d6770;
+}
+#wrap section .bubbleFromMe div {
+  position: absolute;
+  right: -28px;
+  bottom: -8px;
+  width: 10px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: #93a2b0;
+  border-radius: 4px;
+}
+#wrap section .bubbleFromMe:hover {
+  margin-left: 90px;
+  font-size: 16px;
+}
+#wrap section .bubbleFromMe:hover > span:last-of-type {
+  left: -47px;
+}
+#wrap section .bubbleFromHim {
+  position: relative;
+  font-size: 13px;
+  margin: 10px 30px;
+  margin-right: 340px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.1px 5px 0px;
+  transition-property: width;
+  transition-duration: 2s;
+  transition: all 2.3s ease-out;
+}
+#wrap section .bubbleFromHim span {
+  position: absolute;
+}
+#wrap section .bubbleFromHim span:first-of-type {
+  left: -13px;
+  top: 6px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff #fff transparent transparent;
+}
+#wrap section .bubbleFromHim span:last-of-type {
+  right: -37px;
+  bottom: 0;
+}
+#wrap section .bubbleFromHim:hover {
+  margin-right: 90px;
+  font-size: 16px;
+}
+#wrap section .bubbleFromHim:hover > span:last-of-type {
+  right: -47px;
+}
+#wrap div:last-child:hover {
+  background-color: #5d6770;
+}
+#wrap div:last-child {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 10px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: #93a2b0;
+  border-radius: 4px;
+}
+
+footer {
+  position: relative;
+  padding: 40px;
+  background-color: white;
+}
+footer li:first-of-type {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  list-style-type: none;
+}
+footer li:last-of-type {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  list-style-type: none;
+}
+footer li:last-of-type:hover a {
+  background-color: #fada0a;
+}
+footer li:last-of-type a {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background-color: #fee500;
+  border-radius: 5px;
+}/*# sourceMappingURL=styleOther2.css.map */

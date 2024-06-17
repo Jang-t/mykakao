@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+@mixin flex() {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#wrap {
+	@include flex();
+
+	position: relative;
+	width: 536px;
+	margin: 0 auto;
+
+	text-align: left;
+	border: 1px solid #000;
+	.upper {
+		@include flex();
+		height: 700px;
+		.side {
+			display: inline-block;
+			width: 66px;
+			height: 700px;
+			text-align: center;
+			background-color: #ebebec;
+			p {
+				background-color: #ececed;
+				i {
+					font-size: 40px;
+					color: #343740;
+				}
+				i:hover {
+					color: #909297;
+				}
+			}
+			p:nth-of-type(2) {
+				i {
+					animation: twinkle 0.2s infinite alternate;
+				}
+				@keyframes twinkle {
+					from {
+						color: #0f0;
+					}
+					to {
+						color: #0040ff;
+					}
+				}
+			}
+		}
+		.main {
+			width: 450px;
+			margin-bottom: 200px;
+			padding: 0 10px;
+			// border: 1px solid #000;
+			.users {
+				height: 100%;
+				h1 {
+					font-size: 30px;
+				}
+				p {
+					a {
+						i:hover {
+							background-color: lawngreen;
+							border-radius: 50%;
+						}
+						i {
+							padding: 10px;
+							color: #bfbfbf;
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.friends {
+				> a {
+					> div {
+						@include flex();
+						position: relative;
+						padding: 10px;
+						> span {
+							display: inline-block;
+							width: 70px;
+							height: 70px;
+							margin-right: 20px;
+							text-indent: -9999px;
+							background-image: url(../images/seoul.gif);
+							background-size: cover;
+							background-repeat: no-repeat;
+							border-radius: 50%;
+						}
+						p:nth-of-type(1) {
+							position: absolute;
+							left: 100px;
+							margin-right: 150px;
+							line-height: 2;
+							font-weight: 900;
+							span {
+								font-size: 15px;
+							}
+						}
+						p:nth-of-type(2) {
+							font-size: 13px;
+							a {
+								padding: 5px;
+							}
+						}
+					}
+				}
+				a:link,
+				a:visited {
+					display: block;
+					color: #000;
+					text-decoration: none;
+					p:last-child {
+						color: darkgray;
+					}
+				}
+			}
+			a:nth-of-type(2) > .friend {
+				span:first-child {
+					background-image: url(../images/classic.gif);
+					background-position: -29px -24px;
+					background-size: 130px;
+				}
+			}
+			a:nth-of-type(3) > .friend {
+				span:first-child {
+					background-image: url(../images/pet.gif);
+					background-position: -30px -10px;
+					background-size: 132px;
+				}
+			}
+			a:nth-of-type(4) > .friend {
+				span:first-child {
+					background-image: url(../images/clova.gif);
+					background-position: -19px -14px;
+					background-size: 110px;
+				}
+			}
+
+			.me:hover,
+			.friend:hover {
+				background-color: lightgray;
+			}
+
+			.me:active,
+			.friend:active {
+				p:first-child {
+					color: #000;
+				}
+				p:last-child {
+					color: darkgray;
+				}
+			}
+		}
+	}
+}
+
+.ad {
+	p {
+		a {
+			position: absolute;
+			left: -1px;
+			bottom: -100px;
+			float: inline-end;
+			width: 536px;
+			height: 139px;
+			text-indent: -9999px;
+			background-image: url(../images/ad2.gif);
+			background-position: -3px 139px;
+			background-size: cover;
+			border: 1px solid #000;
+		}
+	}
+}
